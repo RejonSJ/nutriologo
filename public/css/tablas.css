@@ -1,0 +1,21 @@
+.buttons-form > .button-wrapper > .btn,
+.buttons-form > .button-wrapper form > .btn{
+    min-width: 31px!important;
+    max-width: 31px!important;
+    display: flex;
+    justify-content: center;
+    min-height: 31px;
+    align-items: center;
+}
+
+.buttons-form .button-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button-wrapper button,
+.button-wrapper a{
+    margin: 1px!important;
+}

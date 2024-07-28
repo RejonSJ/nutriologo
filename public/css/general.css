@@ -1,0 +1,42 @@
+.brand-link .brand-image {
+    float: left;
+    line-height: .8;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: -3px;
+    max-height: 33px;
+    width: auto;
+}
+
+.main-card{
+    margin-top: 12px;
+}
+
+.card-actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal .form-group{
+    margin-bottom: 4px!important;
+}
+
+.align-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-header h5{
+    margin-bottom: 0;
+}
+
+.fake-col{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.h1-centered{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,9 @@
+.main-sidebar:hover .nav.nav-treeview,
+.sidebar-focused .nav.nav-treeview{
+    padding-left: 1rem!important;
+}
+
+.main-sidebar:hover .nav.nav-treeview .nav-link,
+.sidebar-focused .nav.nav-treeview .nav-link{
+    width: 218px!important;
+}

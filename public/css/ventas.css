@@ -1,0 +1,30 @@
+.imagecontainer{
+    min-width: 250px;
+    height: 300px!important; /* Ancho deseado para el div */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+}
+.imagecontainer img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.btn{
+    float: inline-start;
+    margin: 1%;
+}
+
+.footer-btn{
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.card{
+    height: calc(100% - 1rem);
+}
+
+.card h4{
+    display: flex;
+    justify-content: right;
+}

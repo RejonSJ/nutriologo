@@ -1,0 +1,19 @@
+table .image-container{
+    display: flex;
+}
+
+.image-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal .image-container{
+    height: 218px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .card{
+    margin-bottom: 4px;
+}
