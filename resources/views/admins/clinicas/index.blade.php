@@ -105,7 +105,30 @@
         document.getElementById('idEdit').value = clinica.id;
         document.getElementById('nombreEdit').value = clinica.nombre;
         document.getElementById('direccionEdit').value = clinica.direccion;
+        buscarUbicacion('direccionEdit','mapModalEdit');
         $('#editarClinica').modal({backdrop: 'static', keyboard: false}, 'show');
+    }
+    function buscarUbicacion(idBusqueda, widget){
+        ubicacion = encodeURI(document.getElementById(idBusqueda).value);
+        $.ajax({
+            type: "GET",
+            url: "https://nominatim.openstreetmap.org/search?q="+ubicacion+"&format=json",
+            success: function(result) {
+                if (result.length > 0) {
+                    var boundingbox = result[0].boundingbox;
+                    var lat = result[0].lat;
+                    var lon = result[0].lon;
+                    var bbox = boundingbox[2] + ',' + boundingbox[0] + ',' + boundingbox[3] + ',' + boundingbox[1];
+                    var src = 'https://www.openstreetmap.org/export/embed.html?bbox=' + bbox + '&layer=mapnik&marker=' + lat + ',' + lon;
+                    document.getElementById(widget).src = src;
+                } else {
+                    alert('No se encontró la ubicación!');
+                }
+            },
+            error: function(result) {
+                alert('Hubo un error obteniendo la ubicación');
+            }
+        });
     }
 </script>
 @stop

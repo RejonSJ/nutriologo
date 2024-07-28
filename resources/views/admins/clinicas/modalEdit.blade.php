@@ -23,8 +23,23 @@
                                 <label>
                                     Dirección
                                 </label>
-                                <input type="text" class="form-control" id="direccionEdit" name="direccion">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="direccionEdit" name="direccion">
+                                    <button type="button" class="btn btn-secondary" title="Buscar en el mapa" id="buscarUbicacionEdit" onclick="buscarUbicacion('direccionEdit','mapModalEdit');">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </button>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-12">
+                            <iframe
+                            id="mapModalEdit"
+                            width="100%"
+                            max-height="100%"
+                            src="https://www.openstreetmap.org/export/embed.html?"
+                            style="border: 1px solid black"
+                            >
+                            </iframe>
                         </div>
                     </div>
                 </div>
